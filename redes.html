@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conéctate con Sabores de mi Tierra</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <style>
+        .main-redes {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .main-redes h1 {
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .main-redes h1::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #d10000;
+            border-radius: 2px;
+        }
+        
+        .redes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .red-social {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-decoration: none;
+            color: #2d3748;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 300px;
+            justify-content: center;
+        }
+        
+        .red-social:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(30, 64, 175, 0.15);
+            border-color: #1e40af;
+            background: #f8fafc;
+        }
+        
+        .red-social img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+            transition: transform 0.4s ease;
+        }
+        
+        .red-social:hover img {
+            transform: scale(1.1) rotate(-5deg);
+        }
+        
+        .red-social p {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: #1e3a8a;
+        }
+        
+        .red-social span {
+            font-size: 1.1rem;
+            color: #4b5563;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        .footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .redes-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .red-social {
+                height: 250px;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="busqueda.html">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-redes">
+        <h1>Únete a Nuestra Comunidad</h1>
+        
+        <div class="redes-grid">
+            <a href="https://tiktok.com" target="_blank" class="red-social">
+                <img src="imagenes/redes-sociales/tiktok.png" alt="TikTok">
+                <p>SaborTok</p>
+                <span>@recetastradicionalesgt</span>
+            </a>
+            
+            <a href="https://instagram.com" target="_blank" class="red-social">
+                <img src="imagenes/redes-sociales/instagram.png" alt="Instagram">
+                <p>Sabores Visuales</p>
+                <span>@saboresvisuales_gt</span>
+            </a>
+            
+            <a href="https://facebook.com" target="_blank" class="red-social">
+                <img src="imagenes/redes-sociales/facebook.png" alt="Facebook">
+                <p>Cocina Tradicional GT</p>
+                <span>/comidatradicionalgt</span>
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy;  RICARDO AGUILAR 2025</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de mi tierra - Servicios</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <style>
+        /* Estilos específicos para esta página */
+        .main-servicios {
+            padding: 3rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Solo 2 columnas para más ancho */
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .servicio-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 380px; /* Altura fija igual para todos */
+            border-left: 5px solid #1e40af;
+            border-right: 5px solid #1e40af;
+        }
+        
+        .servicio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(30, 64, 175, 0.2);
+        }
+        
+        .servicio-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 2rem;
+            transition: all 0.4s ease;
+        }
+        
+        .servicio-card:hover img {
+            transform: scale(1.15) rotate(5deg);
+        }
+        
+        .servicio-card h2 {
+            color: #1e3a8a;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .servicio-card p {
+            color: #4b5563;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0.5rem 0;
+        }
+        
+        .servicio-card a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        .servicio-card a:hover {
+            color: #1e40af;
+            text-decoration: underline;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 1024px) {
+            .servicios-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            
+            .servicio-card {
+                height: 350px;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="busqueda.html">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-servicios">
+        <h1>Nuestros Servicios Exclusivos</h1>
+        
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="imagenes/servicios/ubicacion.jpg" alt="Ubicación">
+                <h2>Ubicación Premium</h2>
+                <p>Av. Las Américas #43, Zona 13</p>
+                <p>Ciudad de Guatemala, Guatemala</p>
+
+            </div>
+            
+            <div class="servicio-card">
+                <img src="imagenes/servicios/reloj.png" alt="Horarios">
+                <h2>Horarios Extendidos</h2>
+                <p><strong>Lunes a Jueves:</strong> 8:00 am - 10:00 pm</p>
+                <p><strong>Viernes y Sábado:</strong> 8:00 am - 11:30 pm</p>
+   
+            </div>
+            
+            <div class="servicio-card">
+                <img src="imagenes/servicios/whats.png" alt="WhatsApp">
+                <h2>Contacto Directo</h2>
+             
+                <p>Atención personalizada las 24 horas</p>
+    
+            </div>
+            
+            <div class="servicio-card">
+                <img src="imagenes/servicios/pbx.png" alt="PBX">
+                <h2>Líneas de Atención</h2>
+                <p><strong>Central telefónica:</strong> 4564-5242</p>
+                <p><strong>Reservaciones:</strong> 4564-5243</p>
+    
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy;  RICARDO AGUILAR 2025</p>
+    </footer>
+</body>
+</html>
